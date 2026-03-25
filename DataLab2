@@ -1,0 +1,33 @@
+// Cereal.java
+public class Cereal {
+    private String name;
+    private double rating;
+    private double cups;
+
+    public Cereal(String name, double rating, double cups) {
+        this.name = name;
+        this.rating = rating;
+        this.cups = cups;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public double getCups() {
+        return cups;
+    }
+
+    public double getNutritionDensity() {
+        return rating / cups;
+    }
+
+    public String toString() {
+        return name + " | rating=" + rating + ", cups=" + cups
+                + ", nutrition density=" + getNutritionDensity();
+    }
+}
